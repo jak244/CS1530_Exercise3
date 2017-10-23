@@ -4,6 +4,14 @@ public class Exercise3 {
 
     if(args.length == 1) {
 
+      try {
+        triNum(Integer.parseInt(args[0]));
+        lcNum(Integer.parseInt(args[0]));
+      }
+      catch(Exception e) {
+        System.out.println("That is not a number");
+        System.exit(1);
+      }
     }
     else {
       System.out.println("You have the incorrect number of arguments");
