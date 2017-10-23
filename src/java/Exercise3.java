@@ -5,8 +5,10 @@ public class Exercise3 {
     if(args.length == 1) {
 
       try {
-        triNum(Integer.parseInt(args[0]));
-        lcNum(Integer.parseInt(args[0]));
+        int num = Integer.parseInt(args[0]);
+        lcNum(num);
+        System.out.printf("Tri(%d) = %d", num, triNum(num););
+
       }
       catch(Exception e) {
         System.out.println("That is not a number");
@@ -19,8 +21,8 @@ public class Exercise3 {
     }
   }
 
-  public static void triNum(int num) {
-    System.out.printf("Tri(%d) = %d\n", num, (num * (num+1))/2);
+  public static int triNum(int num) {
+    return((num * (num+1))/2);
   }
 
   public static void lcNum(int num) {
