@@ -20,7 +20,7 @@ public class Exercise3 {
   }
 
   public static void triNum(int num) {
-
+    System.out.printf("Tri(%d) = %d\n", num, (num * (num+1))/2);
   }
 
   public static void lcNum(int num) {
