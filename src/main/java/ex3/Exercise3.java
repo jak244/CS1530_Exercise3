@@ -1,3 +1,5 @@
+package ex3;
+
 public class Exercise3 {
 
   public static void main(String[] args) {
@@ -6,8 +8,8 @@ public class Exercise3 {
 
       try {
         int num = Integer.parseInt(args[0]);
-        lcNum(num);
-        System.out.printf("Tri(%d) = %d", num, triNum(num););
+        System.out.printf("Tri(%d) = %d\n", num, triNum(num));
+        System.out.printf("Lazy(%d) = %d", num, lcNum(num));
 
       }
       catch(Exception e) {
@@ -25,7 +27,7 @@ public class Exercise3 {
     return((num * (num+1))/2);
   }
 
-  public static void lcNum(int num) {
-
+  public static int lcNum(int num) {
+    return((num * num + num + 2)/2);
   }
 }
